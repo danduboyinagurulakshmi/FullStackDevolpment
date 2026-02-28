@@ -1,0 +1,17 @@
+nav {
+  margin-top: 20px;
+  background-color: beige;
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;              /* makes items inline */
+  gap: 150px;  
+  list-style: none;             /* space between items */
+  
+}
+nav ul li {
+    cursor: pointer;
+    font-weight: 700;
+    color: red;
+}

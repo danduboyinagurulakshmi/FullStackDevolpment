@@ -1,0 +1,19 @@
+.about-section ul {
+     /* space for bullets */
+  text-align: center;       /* left-align text */
+  list-style-type: disc; /* normal bullets */
+}
+.about-section ul h2 {
+    max-width: 1000px;        /* limit width *//* push list to LEFT */
+    padding-left: 800px; 
+}
+.about-section img,
+.image-content img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  display: block;
+  margin: 25px auto;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}

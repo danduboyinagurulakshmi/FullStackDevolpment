@@ -1,0 +1,35 @@
+.departments {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.departments h1 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+.departments ul {
+  width: 300px;
+  margin: 20px auto;
+  padding: 0;
+}
+
+.departments li {
+  list-style-type: square;
+  font-size: 18px;
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+}
+.image-content {
+  display: flex;
+  gap: 300px;
+}
+.departments{
+  width: 100vw;
+  height: 100vh; 
+}
+
+
+
+
+

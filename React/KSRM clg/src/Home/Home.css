@@ -1,0 +1,22 @@
+.Awards-clg ul {
+  max-width: 400px;        
+  padding-left: 500px;     
+  text-align: center;       
+  list-style-type: disc; 
+}
+.footer-clg {
+  width: 98%;                 
+  background-color: #1f2a44;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 10px;
+}
+
+.Intro-text,
+.About-clg {
+  max-width: 900px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+
