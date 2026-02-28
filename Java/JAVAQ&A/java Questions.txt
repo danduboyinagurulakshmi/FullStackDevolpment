@@ -1,0 +1,694 @@
+🔹 1. Class & Object
+1. What is a class?
+
+A class is a blueprint used to create objects. It defines properties (variables) and behaviors (methods).
+
+2. What is an object?
+
+An object is an instance of a class that contains real values and occupies memory.
+
+3. What is the difference between class and object?
+
+A class is a logical entity, whereas an object is a physical entity that occupies memory.
+
+4. How is memory allocated to objects?
+
+Memory is allocated in the heap area when an object is created using the new keyword.
+
+5. What is the lifecycle of an object?
+
+Creation → Memory allocation → Usage → Garbage collection (destruction).
+
+🔹 2. Encapsulation
+1. What is encapsulation?
+
+Encapsulation is wrapping data and methods into a single unit (class).
+
+2. How do we achieve encapsulation?
+
+By declaring variables as private and providing public getter and setter methods.
+
+3. Why is encapsulation important?
+
+It protects data from unauthorized access and improves security.
+
+4. What is data hiding?
+
+Restricting direct access to variables using access modifiers.
+
+5. What happens if encapsulation is not used?
+
+Data can be modified directly, leading to security and maintenance issues.
+
+🔹 3. Abstraction
+1. What is abstraction?
+
+Abstraction hides implementation details and shows only essential features.
+
+2. How is abstraction achieved?
+
+Using abstract classes and interfaces.
+
+3. Can an abstract class have constructors?
+
+Yes, abstract classes can have constructors.
+
+4. What is the benefit of abstraction?
+
+It reduces complexity and improves maintainability.
+
+5. What happens if a class does not implement abstract methods?
+
+The class must be declared abstract.
+
+🔹 4. Inheritance
+1. What is inheritance?
+
+Inheritance allows one class to acquire properties and methods of another class.
+
+2. What is IS-A relationship?
+
+It represents inheritance. Example: Dog IS-A Animal.
+
+3. What is the use of super keyword?
+
+It is used to refer to parent class variables, methods, or constructors.
+
+4. Can constructors be inherited?
+
+No, constructors are not inherited.
+
+5. What is method overriding?
+
+When a child class provides its own implementation of a parent class method with the same signature.
+
+🔹 5. Polymorphism
+1. What is polymorphism?
+
+Polymorphism means one method behaving differently in different situations.
+
+2. What are types of polymorphism?
+
+Compile-time (overloading) and runtime (overriding).
+
+3. What is method overloading?
+
+Same method name with different parameters in the same class.
+
+4. What is method overriding?
+
+Redefining parent class method in child class.
+
+5. What is dynamic binding?
+
+Method call resolved at runtime instead of compile time.
+
+🔹 6. Constructors
+1. What is a constructor?
+
+A special method used to initialize objects.
+
+2. What are types of constructors?
+
+Default and parameterized constructors.
+
+3. What is constructor chaining?
+
+Calling one constructor from another using this() or super().
+
+4. Can a constructor be private?
+
+Yes, used in Singleton design pattern.
+
+5. What happens if no constructor is defined?
+
+Compiler provides a default constructor.
+
+🔹 7. Association, Aggregation & Composition
+1. What is association?
+
+A relationship between two classes. Example: Teacher and Student.
+
+2. What is aggregation?
+
+A weak relationship where child can exist independently. Example: Library and Books.
+
+3. What is composition?
+
+A strong relationship where child cannot exist without parent. Example: House and Rooms.
+
+4. What is HAS-A relationship?
+
+It represents association or composition.
+
+5. When should composition be preferred over inheritance?
+
+When you want flexibility and loose coupling.
+
+🔹 8. Overloading vs Overriding
+1. What is the main difference?
+
+Overloading → Same class, different parameters.
+Overriding → Different class, same method signature.
+
+2. Can we overload by changing return type only?
+
+No.
+
+3. Can static methods be overridden?
+
+No, they are method hidden.
+
+4. What is covariant return type?
+
+Child class can return a subclass type in overriding.
+
+5. What happens if final method is overridden?
+
+It causes a compile-time error.
+
+
+
+🔹 1. Class & Object (Intermediate Level)
+
+What is the difference between an object and an instance?
+
+How is memory allocated to objects in OOPS?
+
+Can a class exist without creating an object? Explain with example.
+
+What happens when multiple objects share the same reference?
+
+Explain the lifecycle of an object.
+
+🔹 2. Encapsulation
+
+How does encapsulation improve data security?
+
+Why are variables usually declared private in OOPS?
+
+Can we achieve encapsulation without using access modifiers?
+
+What problems occur if encapsulation is not implemented properly?
+
+How is encapsulation different from data hiding?
+
+🔹 3. Abstraction
+
+What is the difference between abstraction and encapsulation with real-time example?
+
+When should we use abstract class instead of interface?
+
+Can an abstract class have constructors? Why?
+
+What happens if a class does not implement all abstract methods?
+
+How does abstraction help in large-scale application development?
+
+🔹 4. Inheritance
+
+What are the advantages and disadvantages of inheritance?
+
+What is the diamond problem and how is it solved?
+
+Can constructors be inherited? Why?
+
+What is the difference between IS-A and HAS-A relationship?
+
+What happens if a child class overrides a parent method but changes return type?
+
+🔹 5. Polymorphism
+
+What is the difference between compile-time and runtime polymorphism?
+
+How does method overriding achieve runtime polymorphism?
+
+Can static methods be overridden? Why?
+
+What is dynamic method dispatch?
+
+What is the difference between overloading and overriding in terms of binding?
+
+🔹 6. Constructors
+
+What is constructor chaining?
+
+Can a constructor be private? When would you use it?
+
+What is the difference between constructor and method?
+
+Can we call one constructor from another? How?
+
+What happens if we do not define any constructor?
+
+🔹 7. Association, Aggregation & Composition
+
+What is association? Give a real-time example.
+
+What is the difference between aggregation and composition?
+
+When should we use composition over inheritance?
+
+Can aggregation exist without strong dependency?
+
+What happens to composed objects if the parent object is deleted?
+
+🔹 8. Method Overloading & Overriding
+
+What are the rules for method overriding?
+
+Can we overload methods by changing only return type?
+
+What is covariant return type?
+
+What access modifier rules apply in overriding?
+
+What happens if final method is overridden?
+
+🔹 9. Advanced OOPS Concepts
+
+What is object cloning and how is it implemented?
+
+What is shallow copy and deep copy?
+
+What is tight coupling and loose coupling?
+
+What is SOLID principle in OOPS?
+
+How does OOPS improve maintainability of code?
+
+
+
+🔹 1. Basic OOPS Concepts
+1. What is OOPS?
+
+Object-Oriented Programming System is a programming paradigm based on objects and classes that helps in organizing code using real-world entities.
+
+2. What are the four pillars of OOPS?
+
+Encapsulation
+
+Abstraction
+
+Inheritance
+
+Polymorphism
+
+3. What is a class?
+
+A class is a blueprint or template used to create objects.
+
+4. What is an object?
+
+An object is an instance of a class that contains properties (variables) and behaviors (methods).
+
+5. Difference between class and object?
+Class	Object
+Blueprint	Instance of class
+Logical entity	Physical entity
+No memory allocated	Memory allocated
+🔹 2. Encapsulation
+6. What is Encapsulation?
+
+Wrapping data (variables) and methods together in a single unit (class).
+
+7. How do you achieve encapsulation?
+
+Make variables private
+
+Use getter and setter methods
+
+8. What are access modifiers?
+
+Private
+
+Default
+
+Protected
+
+Public
+
+🔹 3. Abstraction
+9. What is abstraction?
+
+Hiding implementation details and showing only essential features.
+
+10. How is abstraction achieved?
+
+Abstract classes
+
+Interfaces
+
+11. Difference between abstraction and encapsulation?
+
+Abstraction hides implementation.
+
+Encapsulation hides data.
+
+🔹 4. Inheritance
+12. What is inheritance?
+
+Acquiring properties and methods from another class.
+
+13. Types of inheritance?
+
+Single
+
+Multilevel
+
+Hierarchical
+
+Multiple (through interfaces in Java)
+
+14. What is super keyword?
+
+Used to refer parent class constructor or variables.
+
+15. What is method overriding?
+
+Redefining parent class method in child class with same signature.
+
+🔹 5. Polymorphism
+16. What is polymorphism?
+
+One interface, multiple implementations.
+
+17. Types of polymorphism?
+
+Compile-time (Method Overloading)
+
+Runtime (Method Overriding)
+
+18. What is method overloading?
+
+Same method name with different parameters.
+
+19. Difference between overloading and overriding?
+Overloading	Overriding
+Same class	Different class
+Compile-time	Runtime
+Parameters different	Parameters same
+🔹 6. Constructors
+20. What is a constructor?
+
+A special method used to initialize objects.
+
+21. Types of constructors?
+
+Default constructor
+
+Parameterized constructor
+
+Copy constructor (C++)
+
+22. Can constructor be inherited?
+
+No.
+
+🔹 7. Advanced OOPS (Intermediate Level)
+23. What is the difference between abstract class and interface?
+Abstract Class	Interface
+Can have method body	Mostly only abstract methods
+Can have constructors	Cannot have constructors
+Supports partial abstraction	100% abstraction
+24. What is the difference between shallow copy and deep copy?
+
+Shallow copy: Copies reference.
+
+Deep copy: Copies actual object.
+
+25. What is object cloning?
+
+Creating an exact copy of an object.
+
+26. What is association?
+
+Relationship between two classes.
+
+Types:
+
+Aggregation (Has-A, weak relationship)
+
+Composition (Strong relationship)
+
+🔹 8. Real-Time Based Questions
+27. Why is OOPS better than procedural programming?
+
+Code reusability
+
+Better security
+
+Easy maintenance
+
+Modularity
+
+28. Give a real-time example of encapsulation.
+
+Bank account:
+
+Balance → private
+
+deposit() & withdraw() → public
+
+29. What is dynamic binding?
+
+Method call decided at runtime.
+
+30. What is the use of final keyword?
+
+Prevent method overriding
+
+Prevent inheritance
+
+Make constant variables
+
+🔥 Interview Trick Questions
+31. Can we override private methods?
+
+No.
+
+32. Can we overload main method?
+
+Yes.
+
+33. Can a class be both abstract and final?
+
+No.
+
+34. Why multiple inheritance is not supported in Java?
+
+To avoid Diamond Problem.
+
+
+
+🟢 BASIC LEVEL – OOPS Fundamentals in Java
+1. What is OOPS?
+
+Object-Oriented Programming System is a programming paradigm based on objects, which contain data (variables) and methods (functions).
+
+2. What are the four pillars of OOPS?
+
+Encapsulation
+
+Abstraction
+
+Inheritance
+
+Polymorphism
+
+3. What is a class in Java?
+
+A class is a blueprint or template used to create objects.
+
+4. What is an object?
+
+An object is an instance of a class that contains state and behavior.
+
+5. What is Encapsulation?
+
+Binding data and methods together into a single unit (class) and restricting access using access modifiers.
+
+6. What is Abstraction?
+
+Hiding implementation details and showing only essential features.
+
+7. What is Inheritance?
+
+A mechanism where one class acquires properties of another class using extends.
+
+8. What is Polymorphism?
+
+The ability of an object to take many forms.
+
+Types:
+
+Compile-time (Method Overloading)
+
+Runtime (Method Overriding)
+
+9. What is method overloading?
+
+Same method name with different parameters in the same class.
+
+10. What is method overriding?
+
+Subclass provides specific implementation of a method already defined in parent class.
+
+🟡 INTERMEDIATE LEVEL – Core Java OOPS
+11. Difference between Overloading and Overriding?
+Overloading	Overriding
+Same class	Different classes
+Compile time	Runtime
+Parameters must differ	Same parameters
+12. What is constructor?
+
+A special method used to initialize objects.
+
+13. Types of constructors?
+
+Default constructor
+
+Parameterized constructor
+
+Copy constructor (manually created)
+
+14. What is this keyword?
+
+Refers to current class object.
+
+15. What is super keyword?
+
+Used to call parent class constructor or method.
+
+16. What are access modifiers in Java?
+
+public
+
+private
+
+protected
+
+default
+
+17. What is final keyword?
+
+final variable → constant
+
+final method → cannot override
+
+final class → cannot inherit
+
+18. What is static keyword?
+
+Belongs to class, not object.
+
+19. What is abstract class?
+
+A class that cannot be instantiated and may contain abstract methods.
+
+20. What is interface?
+
+A blueprint of a class that contains abstract methods (Java 8+ can have default & static methods).
+
+21. Difference between abstract class and interface?
+Abstract Class	Interface
+Can have constructors	Cannot have constructors
+Can have instance variables	Only constants
+Single inheritance	Multiple inheritance supported
+22. What is multiple inheritance? Does Java support it?
+
+Java does not support multiple inheritance with classes but supports it using interfaces.
+
+🔵 ADVANCED LEVEL – Interview Focused Questions
+23. What is dynamic method dispatch?
+
+Runtime polymorphism mechanism where overridden method is called at runtime using parent reference.
+
+24. Can we override static methods?
+
+No. Static methods are resolved at compile time.
+
+25. Can we override private methods?
+
+No. Private methods are not inherited.
+
+26. What is object slicing?
+
+When subclass object is assigned to parent object and subclass-specific properties are lost.
+
+27. What is covariant return type?
+
+When overridden method returns subclass type instead of parent type.
+
+28. What is marker interface?
+
+An empty interface used to mark a class (Example: Serializable, Cloneable).
+
+29. What is tight coupling and loose coupling?
+
+Tight coupling → Classes are highly dependent
+
+Loose coupling → Classes are independent (using interfaces)
+
+30. What is composition in Java?
+
+A "has-a" relationship where one class contains another class object.
+
+31. What is aggregation?
+
+A weak "has-a" relationship where objects can exist independently.
+
+32. What is difference between == and equals()?
+
+== → compares memory reference
+
+equals() → compares object content
+
+33. Why is Java not 100% object-oriented?
+
+Because it supports primitive data types (int, char, float, etc.).
+
+34. What is Object class?
+
+Root class of Java. Every class implicitly extends Object.
+
+Important methods:
+
+toString()
+
+equals()
+
+hashCode()
+
+35. What is Singleton class?
+
+A class that allows only one object creation.
+
+🔴 VERY ADVANCED (For Strong Technical Viva)
+36. What happens when constructor is private?
+
+Object cannot be created outside the class (used in Singleton).
+
+37. Can constructors be overridden?
+
+No. Constructors are not inherited.
+
+38. What is immutable class?
+
+A class whose object state cannot be changed after creation (Example: String).
+
+39. What is cloning in Java?
+
+Creating a copy of an object using clone() method.
+
+40. Explain SOLID principles briefly.
+
+S – Single Responsibility
+
+O – Open Closed
+
+L – Liskov Substitution
+
+I – Interface Segregation
+
+D – Dependency Inversion

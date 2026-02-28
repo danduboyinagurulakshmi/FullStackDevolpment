@@ -1,0 +1,250 @@
+DAY - 1
+
+-> markup
+-> styling
+-> scripting
+-> programming
+->database
+->configuration
+->query& API
+
+
+
+concepts:
+what is java script? where it runs.
+variables
+datatypes
+operators
+console & debugging
+
+hands-on:
+setup vs code +chrome dev tools
+-write ur frst js prgm
+-simple calculator
+-age eligibility
+-temperature converter
+
+=> mini challenge:Number guessing game
+
+Questions:
+
+1.is java script is script language or programming language?
+2.what is dynamically typed?
+3.what is weakly typed language?
+4.diff b/w readability and realiability?
+5.what is synchronous in nature?
+7.what is TDZ?
+6.what is hoisting?
+
+
+Advantages:
+easy to learn
+reduces server load
+efficient performance
+
+how to include js in html?
+
+A:we can insert js code to html in two ways:
+1.Internal js
+2.External.js
+
+-> console.log("hello");
+-> Document.writeln("HELLO");
+->document.getElementById("").value;
+
+3keywords in javascript:
+
+let/const/var
+-> let is assigned within block and it is reassigned
+-> const  it is declared once it is not changed 
+    for eg: pie value
+->var is assigned values
+->redeclaration only in var  not let and const
+->scope:var:global scope
+let,const:script scope
+->reintializing: var,let:yes,const:no  //same as intialization
+
+7 DATA TYPES IN JS:
+-> PRIMITIVE:  string,number,bigint,boolean,undefined,null,symbol
+-> Non-Pimitive: function,object,array
+
+STRING:
+we can declare 3 ways 
+eg: 'hello',"hello",`hello`
+
+NUMBER:
+Integer and floating point numbers
+BigInt:BigInt (Introduced in ES2020)
+BigInt is a built-in object that provides a way to represent whole numbers greater than 253. The largest number that JavaScript can reliably represent with the Number primitive is 253, which is represented by the MAX_SAFE_INTEGER constant.
+
+Boolean:True,False
+
+Undefined:A variable that has been declared but not initialized with a value is automatically assigned the undefined value. It means the variable exists, but it has no value assigned to it.
+
+Null:empty
+Symbol:ES6 symbols
+OPERATORS:
+Arithmetic:+,-,*,/,%,++,--
+Assignment:+=,-=,*=,/=,%=,=
+Comparison:>,<,!=,>=,<=,==,===
+Logical:&&,||,!
+Ternary:(condition)?True stmt:false stmt
+
+day2:  CONTROL FLOW & FUNCTIONS
+
+-if,else,switch
+-for,while loops
+-Functions,Arrows functions
+HAnds-on:
+-student marks calculator
+-prime number checker
+-login validation system
+=> Mini project:ATM Simulation
+
+Questions:
+1.what is conditional statements?
+2.what is function with syntax ?
+
+
+
+age eligibility:
+
+age=int(input("enter a age:"))
+if age>=18:
+print("eligible for vote:")
+else:
+print("not eligible for vote:")
+
+#include<stdio.h>
+int main(){
+int age;
+printf("enter ur age:");
+scanf("%d",&age);
+if(age>=18){
+printf("eligible for vote");
+}
+else{
+printf("not eligible for vote")
+}
+}
+
+Day-3: -arrays,objects & Data Handling
+
+-Arrays,objects,map,filter,reduce,JSON
+
+hands-ON:
+-product list
+-shopping cart
+-user profile manager
+-mini project: E-commerce product listing page
+
+Day-4: DOM,Events & Browser programming
+-DoM,events,forms,local storage
+
+Hands-on:
+=> to-do-App
+=> Notes App
+=>login form
+=>mini project: registration portal
+
+Day-6
+
+1.Event Handling
+2.Strings
+3.Json
+4.Local Storage
+
+1.give for loop example and explain for-in and for-of ?
+2..what is TDZ?
+3.what is synchronous in nature?
+4.is java script is script language or programming language?
+5.function inside write the code and function outside the code what happend?
+
+
+Task1:
+create a html login form 
+Task2:create a input field and use 2 functions 1 is if and 2 is switch
+
+Arrays:
+it is colllection of different elements .it is heterogeneous===> 7.what is diff b/w Array(literal and constructor)?8.can i modify var code outside a block it wiil be change in inside function?>
+
+
+1)
+2)javascript array constructor(new keyword)
+
+
+3)javascript Array methods:
+-push(): it will insert an element of an array at the end
+-unshift():insert at first
+-pop(): it remove from end
+-shift(): it remove from start
+-indexOf(): it will return a index of particular element
+-Includes():it will check whether particular element is present in array or not
+-At(): it will return the element which is present in particular index
+-Slice(): it will  give slice of an array and it will not affect the original array
+-Splice(): it is used to add or remove elements from an array
+-join():
+-concat():
+-tostring():
+-split():
+-Reverse():
+-Array from():
+
+
+filter():
+map():
+reduce():
+callback:
+element:
+index:
+
+popup:
+-> alert box=dialogue box
+-> prompt box=to take input
+-> confirm box=verify or accept something
+-> debug()=
+
+DOM(Document object model)
+what is slind
+what is alert vs prompt vs confirm?
+what is stringify method and parse method?
+
+
+
+javascript Essentials for React:
+how browser works DOM
+ES6
+let/const
+Arrow functions
+destructuring
+spread operator
+Advanced ES6:
+
+Typescript:
+
+Introduction to TypeScript
+What is type script?
+
+TypeScript is an application-scale programming language that provides early access to proposed new JavaScript features and powerful additional features like static type checking. You can write TypeScript programs to run in web browsers or on servers and you can reuse code between browser and server applications.
+
+TypeScript solves many problems in JavaScript, but it respects the patterns and implementation of the underlying JavaScript language, for example, the ability to have dynamic types.
+
+You can use many integrated development environments with TypeScript, with several providing first-class support including type checking and autocompletion that will improve your productivity and help eliminate mistakes at design time.
+
+1. Language
+
+The language part of TypeScript includes its syntax, keywords, and type system.
+It allows developers to define data types, interfaces, and structures in their programs.
+By using types, the programmer clearly describes how data should be used, which helps avoid errors and makes the code easier to understand and maintain.
+
+2. Compiler
+
+The TypeScript compiler is responsible for converting TypeScript code into JavaScript.
+During this process, it checks the code for type-related errors and gives warnings if it finds any issues.
+The compiler removes all type information (type erasure) and can also perform additional tasks such as combining files, generating source maps, and transforming modern syntax into compatible JavaScript.
+
+3. Language Service
+
+The language service provides intelligent support for developers while writing code.
+It uses the type information from the program to offer features like auto-completion, type hints, error highlighting, and refactoring tools.
+
