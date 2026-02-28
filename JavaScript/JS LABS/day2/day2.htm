@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Student Marks Calculator</h1>
+    
+    <h2>Enter Marks</h2>
+    Math: <input type="number" id="math"><br><br>
+    Science: <input type="number" id="science"><br><br>
+    English: <input type="number" id="english"><br><br>
+    Max Marks per subject: <input type="number" id="maxMarks" value="100"><br><br>
+    
+    <button onclick="calculate()">Calculate</button>
+    <button onclick="reset()">Reset</button>
+    
+    <h2>Results</h2>
+    Total Marks: <span id="total">0</span><br>
+    Percentage: <span id="percentage">0</span>%<br>
+    Grade: <span id="grade">-</span>
+    
+    <script>
+        function calculate() {
+            // Get marks
+            const math = parseFloat(document.getElementById('math').value) || 0;
+            const science = parseFloat(document.getElementById('science').value) || 0;
+            const english = parseFloat(document.getElementById('english').value) || 0;
+            const maxMarks = parseFloat(document.getElementById('maxMarks').value) || 100;
+            
+            // Calculate total
+            const total = math + science + english;
+            
+            // Calculate percentage
+            const totalMax = maxMarks * 3;
+            const percentage = (total / totalMax * 100).toFixed(2);
+            
+            // Determine grade
+            let grade = 'F';
+            if (percentage >= 90) grade = 'A+';
+            else if (percentage >= 80) grade = 'A';
+            else if (percentage >= 70) grade = 'B';
+            else if (percentage >= 60) grade = 'C';
+            else if (percentage >= 50) grade = 'D';
+            else if (percentage >= 40) grade = 'E';
+            
+            // Display results
+            document.getElementById('total').textContent = total;
+            document.getElementById('percentage').textContent = percentage;
+            document.getElementById('grade').textContent = grade;
+        }
+        
+        function reset() {
+            document.getElementById('math').value = '';
+            document.getElementById('science').value = '';
+            document.getElementById('english').value = '';
+            document.getElementById('maxMarks').value = '100';
+            
+            document.getElementById('total').textContent = '0';
+            document.getElementById('percentage').textContent = '0';
+            document.getElementById('grade').textContent = '-';
+        }
+    </script>
+</body>
+</html>
+<!-- A:<input type="number" id="A"><br>
+B:<input type="number" id="B"><br> -->
+<!-- username:<input type="text" id="username"><br>
+password:<input type="password" id="password"><br>
+<button onclick="check()">check</button>
+<script src="day2.js"></script> -->
+</body>
+
+
+</html>
