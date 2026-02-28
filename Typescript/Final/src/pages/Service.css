@@ -1,0 +1,51 @@
+.services-page {
+  width: 100%;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Heading */
+.services-header h1 {
+  font-size: 2.2rem;
+  color: #1f2a44;
+}
+
+.services-header p {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Services list */
+.services-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.services-list li {
+  width: 280px;
+  background: #f2f2f2;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.services-list h2 {
+  font-size: 1.3rem;
+  color: #1f2a44;
+}
+
+.services-list p {
+  color: #666;
+}
+
+/* Image */
+.services-image img {
+  width: 90%;
+  max-width: 900px;
+  border-radius: 10px;
+}
