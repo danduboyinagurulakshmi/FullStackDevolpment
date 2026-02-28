@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Patient Login</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+<section class="login">
+  <h2>Patient Login</h2>
+
+  <form id="loginForm">
+    <label>Email</label>
+    <input type="email" id="loginEmail" required>
+
+    <label>Password</label>
+    <input type="password" id="loginPassword" required>
+
+    <button type="submit">Login</button>
+
+    <p id="loginMessage"></p>
+
+    <p class="link">
+      New patient?
+      <a href="signup.html">Create an account</a>
+    </p>
+
+    <p class="link">
+      <a href="cms.html">Home</a>
+    </p>
+  </form>
+</section>
+
+<script src="cms.js"></script>
+</body>
+</html>

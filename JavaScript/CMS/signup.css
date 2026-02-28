@@ -1,0 +1,88 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Page background */
+body {
+  min-height: 100vh;
+  background: linear-gradient(to right, #0077b6, #90e0ef);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Signup container */
+.signup {
+  background: #ffffff;
+  width: 380px;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading */
+.signup h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0077b6;
+}
+
+/* Labels */
+.signup label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Inputs */
+.signup input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  font-size: 14px;
+}
+
+/* Input focus */
+.signup input:focus {
+  border-color: #0077b6;
+}
+
+/* Button */
+.signup button {
+  width: 100%;
+  padding: 12px;
+  background: #0077b6;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+/* Button hover */
+.signup button:hover {
+  background: #023e8a;
+}
+
+/* Message */
+#message {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Mobile responsive */
+@media (max-width: 450px) {
+  .signup {
+    width: 90%;
+  }
+}
