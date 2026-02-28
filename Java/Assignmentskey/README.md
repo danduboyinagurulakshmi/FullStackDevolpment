@@ -83,3 +83,14 @@ Each program prints **meaningful error messages** and avoids program crashes.
 ---
 
 ## 📂 Folder Structure
+
+Java/
+│
+├── Arrays/
+├── OOPS/
+├── Exceptions/
+├── Threads/
+├── AbstractClasses/
+├── Interfaces/
+├── MatrixProblems/
+└── README.md
